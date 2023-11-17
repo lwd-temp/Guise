@@ -80,13 +80,10 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.material.icons.extended)
-
-    // implementation("kiwi.orbit.compose:ui:0.34.0")
-    // implementation("kiwi.orbit.compose:icons:0.34.0")
-    // implementation("kiwi.orbit.compose:illustrations:0.34.0")
-    // implementation("com.exyte:animated-navigation-bar:1.0.0")
-    implementation("br.com.devsrsouza.compose.icons:font-awesome:1.1.0")
-    implementation (libs.timber)
+    implementation(libs.compose.icon.font.awesome)
+    implementation(libs.timber)
+    compileOnly(libs.libxposed.api)
+    implementation(libs.libxposed.service)
 }
 
 kapt {

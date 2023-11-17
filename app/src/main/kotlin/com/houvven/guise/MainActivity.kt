@@ -7,7 +7,9 @@ import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.WindowCompat
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.houvven.guise.ui.App
+import com.houvven.guise.ui.AppViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,7 +21,9 @@ class MainActivity : ComponentActivity() {
             darkScrim = Color.TRANSPARENT,
             lightScrim = Color.TRANSPARENT
         ))
+
         setContent {
+            hiltViewModel<AppViewModel>()
             App()
         }
     }
