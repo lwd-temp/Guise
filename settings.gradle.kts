@@ -17,4 +17,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Guise"
 include(":app")
-include(":hook")
