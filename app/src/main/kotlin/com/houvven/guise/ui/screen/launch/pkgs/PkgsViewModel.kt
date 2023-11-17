@@ -1,8 +1,8 @@
 package com.houvven.guise.ui.screen.launch.pkgs
 
-import com.houvven.guise.mvi.Intent
-import com.houvven.guise.mvi.MviViewModel
-import com.houvven.guise.pkg.PkgScanner
+import com.houvven.guise.ui.mvi.Intent
+import com.houvven.guise.ui.mvi.MviViewModel
+import com.houvven.guise.utils.pkg.PkgScanner
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

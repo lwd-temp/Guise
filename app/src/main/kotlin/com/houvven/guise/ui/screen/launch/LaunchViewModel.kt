@@ -1,8 +1,8 @@
 package com.houvven.guise.ui.screen.launch
 
 import androidx.navigation.NavHostController
-import com.houvven.guise.mvi.Intent
-import com.houvven.guise.mvi.MviViewModel
+import com.houvven.guise.ui.mvi.Intent
+import com.houvven.guise.ui.mvi.MviViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 
 

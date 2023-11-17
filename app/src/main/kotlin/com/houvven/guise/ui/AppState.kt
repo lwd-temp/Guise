@@ -1,6 +1,6 @@
 package com.houvven.guise.ui
 
-import com.houvven.guise.pkg.PkgWithCompose
+import com.houvven.guise.utils.pkg.PkgWithCompose
 
 data class AppState(
     val isLoadingPkgs: Boolean = false,

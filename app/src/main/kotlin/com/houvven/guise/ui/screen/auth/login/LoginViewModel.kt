@@ -2,8 +2,8 @@ package com.houvven.guise.ui.screen.auth.login
 
 import android.util.Log
 import androidx.navigation.NavHostController
-import com.houvven.guise.mvi.Intent
-import com.houvven.guise.mvi.MviViewModel
+import com.houvven.guise.ui.mvi.Intent
+import com.houvven.guise.ui.mvi.MviViewModel
 import com.houvven.guise.ui.Screen
 import kotlinx.coroutines.flow.MutableStateFlow
 

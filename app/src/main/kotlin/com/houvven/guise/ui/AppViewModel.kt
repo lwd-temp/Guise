@@ -1,10 +1,10 @@
 package com.houvven.guise.ui
 
 import androidx.lifecycle.viewModelScope
-import com.houvven.guise.mvi.Intent
-import com.houvven.guise.mvi.MviViewModel
-import com.houvven.guise.pkg.PkgScanner
-import com.houvven.guise.pkg.PkgWithCompose
+import com.houvven.guise.ui.mvi.Intent
+import com.houvven.guise.ui.mvi.MviViewModel
+import com.houvven.guise.utils.pkg.PkgScanner
+import com.houvven.guise.utils.pkg.PkgWithCompose
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch

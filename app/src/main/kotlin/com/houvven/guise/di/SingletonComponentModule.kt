@@ -1,7 +1,7 @@
 package com.houvven.guise.di
 
 import android.content.Context
-import com.houvven.guise.pkg.PkgScanner
+import com.houvven.guise.utils.pkg.PkgScanner
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

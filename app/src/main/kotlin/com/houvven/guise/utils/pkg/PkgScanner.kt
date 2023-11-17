@@ -1,4 +1,4 @@
-package com.houvven.guise.pkg
+package com.houvven.guise.utils.pkg
 
 import android.content.Context
 import android.content.pm.PackageManager

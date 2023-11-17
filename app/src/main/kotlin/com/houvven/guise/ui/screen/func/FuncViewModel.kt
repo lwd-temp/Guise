@@ -1,7 +1,7 @@
 package com.houvven.guise.ui.screen.func
 
-import com.houvven.guise.mvi.Intent
-import com.houvven.guise.mvi.MviViewModel
+import com.houvven.guise.ui.mvi.Intent
+import com.houvven.guise.ui.mvi.MviViewModel
 
 internal class FuncViewModel : MviViewModel() {
 

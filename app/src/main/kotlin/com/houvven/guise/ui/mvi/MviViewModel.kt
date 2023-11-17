@@ -1,4 +1,4 @@
-package com.houvven.guise.mvi
+package com.houvven.guise.ui.mvi
 
 import androidx.lifecycle.ViewModel
 
