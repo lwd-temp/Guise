@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">Guise</string>
+    <string name="login">Login</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">forget the password?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Signup</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up_welcome">Join us and get started!</string>
+    <string name="already_have_an_account">Already have an account?</string>
+</resources>
