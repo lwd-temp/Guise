@@ -41,9 +41,8 @@ class AppViewModel @Inject constructor(
     }
 
     private fun loadPkgs() {
-        _state.value = _state.value.copy(isLoadingPkgs = true)
+        _state.value = _state.value.copy(isLoadingPkgs = true, pkgQuantity = pkgScanner.getPkgQuantity())
         viewModelScope.launch {
-            _state.value = _state.value.copy(pkgQuantity = pkgScanner.getPkgQuantity())
             val pkgs = PkgWithCompose.withPkg(pkgScanner.suspendScan {
                 _state.value =
                     _state.value.copy(loadedPkgQuantity = _state.value.loadedPkgQuantity + 1)
