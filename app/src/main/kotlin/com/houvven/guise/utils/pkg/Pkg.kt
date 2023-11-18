@@ -31,7 +31,7 @@ data class Pkg(
             val appName = packageInfo.applicationInfo.loadLabel(pm).toString()
             val icon = pm.getApplicationIcon(packageName)
             val isSystemPkg = isSystemPkg(packageInfo)
-            val versionName = packageInfo.versionName
+            val versionName = packageInfo.versionName ?: ""
             val versionCode = packageInfo.versionCode
             val firstInstallTime = packageInfo.firstInstallTime
             val lastUpdateTime = packageInfo.lastUpdateTime
