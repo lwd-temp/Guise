@@ -41,6 +41,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.4"
@@ -84,6 +85,7 @@ dependencies {
     implementation(libs.timber)
     compileOnly(libs.libxposed.api)
     implementation(libs.libxposed.service)
+    implementation("com.highcapable.yukireflection:api:1.0.3")
 }
 
 kapt {
