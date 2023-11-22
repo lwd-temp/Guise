@@ -5,18 +5,19 @@ androidx-test-ext-junit = "1.1.5"
 compose-bom = "2023.10.01"
 composeIcon = "1.1.0"
 core-ktx = "1.12.0"
+xposed-api = "82"
 espresso-core = "3.5.1"
 hilt = "2.48.1"
 hiltNavigationCompose = "1.1.0"
 junit = "4.13.2"
 kotlin = "1.9.20"
 kotlinxCoroutines = "1.7.3"
-libxposedApi = "100"
-libxposedService = "100-1.0.0"
+ksp = "1.9.0-1.0.11"
 lifecycle-runtime-ktx = "2.6.2"
 materialIconsExtended = "1.5.4"
 navigationCompose = "2.7.5"
 timber = "5.0.1"
+yuki = "1.2.0"
 
 [libraries]
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
@@ -44,9 +45,13 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+xposed-api = { module = "de.robv.android.xposed:api", version.ref = "xposed-api" }
+yuki-api = { module = "com.highcapable.yukihookapi:api", version.ref = "yuki" }
+yuki-ksp-xposed = { module = "com.highcapable.yukihookapi:ksp-xposed", version.ref = "yuki" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

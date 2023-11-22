@@ -12,9 +12,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        mavenLocal {
-            include("io.github.libxposed")
-        }
+        maven { url = uri("https://api.xposed.info/") }
         maven { url = uri("https://s01.oss.sonatype.org/content/repositories/releases/") }
     }
 }

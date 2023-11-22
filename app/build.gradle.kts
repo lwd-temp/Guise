@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.hiltAndroid)
     kotlin("kapt")
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -83,9 +84,10 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.compose.icon.font.awesome)
     implementation(libs.timber)
-    compileOnly(libs.libxposed.api)
-    implementation(libs.libxposed.service)
-    implementation("com.highcapable.yukireflection:api:1.0.3")
+
+    implementation(libs.yuki.api)
+    compileOnly(libs.xposed.api)
+    ksp(libs.yuki.ksp.xposed)
 }
 
 kapt {
