@@ -6,7 +6,7 @@ import com.houvven.guise.utils.StopWatch
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class PkgScanner(private val context: Context) {
+class PkgScanner(context: Context) {
 
     private val pm = context.packageManager
 

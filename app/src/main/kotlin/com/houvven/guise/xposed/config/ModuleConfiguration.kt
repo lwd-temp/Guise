@@ -7,8 +7,8 @@ import com.houvven.guise.xposed.config.item.LocationConf
 import com.houvven.guise.xposed.config.item.PropertiesConf
 import com.houvven.guise.xposed.config.item.SimConf
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.Transient
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.serializer
 
 private val emptyXposedModuleConfiguration = ModuleConfiguration()
 
@@ -79,6 +79,7 @@ data class ModuleConfiguration(
     }
 
     companion object {
+
         private val json = Json {
             prettyPrint = false
             encodeDefaults = true

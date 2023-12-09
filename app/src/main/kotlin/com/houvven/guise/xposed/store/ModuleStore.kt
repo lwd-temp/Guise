@@ -4,7 +4,7 @@ import com.houvven.guise.xposed.config.ModuleConfiguration
 
 
 interface ModuleStore {
-    fun get(packageName: String): ModuleConfiguration?
+    fun get(packageName: String): ModuleConfiguration
     fun set(packageName: String, configuration: ModuleConfiguration)
     fun isConfigured(packageName: String): Boolean
 

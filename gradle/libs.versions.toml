@@ -5,6 +5,7 @@ androidx-test-ext-junit = "1.1.5"
 compose-bom = "2023.10.01"
 composeIcon = "1.1.0"
 core-ktx = "1.12.0"
+kotlinxSerializationJson = "1.6.2"
 xposed-api = "82"
 espresso-core = "3.5.1"
 hilt = "2.49"
@@ -12,7 +13,7 @@ hiltNavigationCompose = "1.1.0"
 junit = "4.13.2"
 kotlin = "1.9.21"
 kotlinxCoroutines = "1.7.3"
-ksp = "1.9.20-1.0.14"
+ksp = "1.9.21-1.0.15"
 lifecycle-runtime-ktx = "2.6.2"
 materialIconsExtended = "1.5.4"
 navigationCompose = "2.7.5"
@@ -34,6 +35,7 @@ hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt"
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }

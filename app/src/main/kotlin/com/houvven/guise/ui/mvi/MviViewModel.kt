@@ -23,4 +23,3 @@ abstract class MviViewModel : ViewModel() {
      */
     protected abstract fun reduce(intent: Intent)
 }
-

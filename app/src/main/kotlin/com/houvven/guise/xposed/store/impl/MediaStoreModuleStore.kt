@@ -14,12 +14,12 @@ open class MediaStoreModuleStore constructor(
         Environment.getExternalStorageDirectory().resolve("Android/media")
     }
 
-    override fun get(packageName: String): ModuleConfiguration? {
+    override fun get(packageName: String): ModuleConfiguration {
         val mediaDirectory = getPackageMediaDirectory(packageName)
         val file = File(mediaDirectory, filename)
-        if (!file.exists()) return null
+        if (!file.exists()) return ModuleConfiguration()
         val jsonStr = file.readText()
-        if (jsonStr.isBlank()) return null
+        if (jsonStr.isBlank()) return ModuleConfiguration()
 
         return ModuleConfiguration.fromJsonString(jsonStr)
     }

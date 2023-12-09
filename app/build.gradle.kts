@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.hiltAndroid)
     kotlin("kapt")
+    kotlin("plugin.serialization") version libs.versions.kotlin
     alias(libs.plugins.ksp)
 }
 
@@ -45,7 +46,7 @@ android {
         buildConfig = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.5.6"
     }
     packaging {
         resources {
@@ -77,6 +78,7 @@ dependencies {
 
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.coroutines.android)
+    // hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
@@ -84,6 +86,7 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.compose.icon.font.awesome)
     implementation(libs.timber)
+    implementation(libs.kotlinx.serialization.json)
 
     implementation(libs.yuki.api)
     compileOnly(libs.xposed.api)

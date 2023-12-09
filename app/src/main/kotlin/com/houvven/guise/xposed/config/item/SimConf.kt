@@ -1,9 +1,11 @@
 package com.houvven.guise.xposed.config.item
 
 import com.houvven.guise.xposed.config.ModuleConf
+import kotlinx.serialization.Serializable
 
 private val emptySimConf = SimConf()
 
+@Serializable
 data class SimConf(
     /**
      * sim operator, such as: 46000, 46001, 46002, 46003, etc.
