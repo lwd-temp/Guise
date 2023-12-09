@@ -65,22 +65,18 @@ class PropertiesHooker(config: ModuleConfiguration) : Hooker(config) {
                 PropertiesHookOptions(
                     value = brand,
                     fieldName = listOf("BRAND", "MANUFACTURER"),
-                    // systemPropKey = listOf("ro.product.brand", "ro.product.manufacturer")
                 ),
                 PropertiesHookOptions(
                     value = model,
                     fieldName = listOf("MODEL"),
-                    // systemPropKey = listOf("ro.product.model")
                 ),
                 PropertiesHookOptions(
                     value = product,
                     fieldName = listOf("PRODUCT"),
-                    // systemPropKey = listOf("ro.product.name")
                 ),
                 PropertiesHookOptions(
                     value = device,
                     fieldName = listOf("DEVICE"),
-                    // systemPropKey = listOf("ro.product.device")
                 ),
                 PropertiesHookOptions(
                     value = characteristics,
@@ -89,13 +85,11 @@ class PropertiesHooker(config: ModuleConfiguration) : Hooker(config) {
                 PropertiesHookOptions(
                     value = sdk,
                     fieldName = listOf("SDK_INT"),
-                    // systemPropKey = listOf("ro.build.version.sdk"),
                     type = VERSION
                 ),
                 PropertiesHookOptions(
                     value = release,
                     fieldName = listOf("RELEASE"),
-                    // systemPropKey = listOf("ro.build.version.release"),
                     type = VERSION
                 ),
                 PropertiesHookOptions(

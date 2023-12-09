@@ -3,7 +3,6 @@ package com.houvven.guise.xposed.config.item
 import com.houvven.guise.xposed.config.ModuleConf
 import kotlinx.serialization.Serializable
 
-private val emptyUniqueIdentifierConf = IdentifierConf()
 
 @Serializable
 data class IdentifierConf(
@@ -20,6 +19,6 @@ data class IdentifierConf(
     val imei: String? = null
 ) : ModuleConf {
     override fun isEffective(): Boolean {
-        return this != emptyUniqueIdentifierConf
+        return this != IdentifierConf()
     }
 }

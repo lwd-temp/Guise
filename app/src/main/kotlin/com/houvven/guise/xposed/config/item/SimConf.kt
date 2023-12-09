@@ -3,7 +3,6 @@ package com.houvven.guise.xposed.config.item
 import com.houvven.guise.xposed.config.ModuleConf
 import kotlinx.serialization.Serializable
 
-private val emptySimConf = SimConf()
 
 @Serializable
 data class SimConf(
@@ -29,6 +28,6 @@ data class SimConf(
     val simState: Int? = null,
 ) : ModuleConf {
     override fun isEffective(): Boolean {
-        return this != emptySimConf
+        return this != SimConf()
     }
 }

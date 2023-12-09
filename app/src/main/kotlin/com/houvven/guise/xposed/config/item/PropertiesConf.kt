@@ -3,7 +3,6 @@ package com.houvven.guise.xposed.config.item
 import com.houvven.guise.xposed.config.ModuleConf
 import kotlinx.serialization.Serializable
 
-private val emptyPropertiesConf = PropertiesConf()
 
 @Serializable
 data class PropertiesConf(
@@ -45,9 +44,8 @@ data class PropertiesConf(
      */
     val hardware: String? = null
 ) : ModuleConf {
-    @Deprecated("should not call this method directly, use isEffective instead")
     override fun isEffective(): Boolean {
         // 宣泰廷
-        return this != emptyPropertiesConf
+        return this != PropertiesConf()
     }
 }
